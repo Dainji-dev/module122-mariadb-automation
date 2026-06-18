@@ -1,0 +1,1 @@
+# module122-mariadb-automation
