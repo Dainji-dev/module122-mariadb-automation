@@ -58,6 +58,7 @@ module122-mariadb-automation/
 ├── README.md
 ├── install_mariadb.sh
 ├── rapport.md
+├── rapport.pdf
 ├── logs/
 │   └── install_mariadb.log
 └── captures/
