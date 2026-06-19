@@ -66,8 +66,9 @@ echo "Mise à jour des paquets effectuée avec succès."
 
 # Vérifier si MariaDB est déjà installé, si non : l'installer
 if command -v mariadb > /dev/null 2>&1; then
-    echo "MariaDB est déjà installé, passage à l'étape suivante."
-    echo "[OK]     MariaDB déjà installé, installation ignorée" >> "$LOG"
+    VERSION=$(mariadb --version)
+    echo "MariaDB déjà installé : $VERSION"
+    echo "[OK]     MariaDB déjà installé : $VERSION" >> "$LOG"
 else
     echo "Installation de MariaDB en cours..."
     apt install mariadb-server -y >> "$LOG" 2>> "$LOG"
